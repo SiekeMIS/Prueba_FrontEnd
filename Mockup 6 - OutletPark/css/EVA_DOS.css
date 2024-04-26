@@ -1,0 +1,352 @@
+/*Parte del tope*/
+.elemento {
+    display: inline-flex; /* Establece el estilo de visualización como inline-flex para alinear los elementos en línea */
+    margin-right: 170px; /* Agrega un margen entre los elementos */
+    stop-color: #030c17;/* Establece el color de parada (stop-color) */
+    font-weight: bold; /* Establece el grosor de la fuente en negrita */
+    cursor: pointer; /* Cambia el cursor a una mano */
+    transition: opacity 0.2s ease; /* Agrega una transición suave de opacidad durante 0.2 segundos */
+}
+.elemento:hover {
+    background-color: #7a5858; /* Cambia el color de fondo al pasar el mouse */
+  }
+.contenedor {
+    margin-left: 100px; /* Ajusta el valor del margen derecho según sea necesario */
+}
+.Logitotcg {
+    width: 110px;/* Ancho deseado del logo */
+    height: auto;/* Altura ajustada automáticamente */
+}
+.logo-ubicacion {
+    width: 20px; /* Ancho deseado del logo */
+    height: auto;/* Altura ajustada automáticamente */
+}
+.logo-tiendas {
+    width: 25px; /* Ancho deseado del logo */
+    height: auto;/* Altura ajustada automáticamente */
+}
+.logo-panoramas {
+    width: 20px; /* Ancho deseado del logo */
+    height: auto;/* Altura ajustada automáticamente */
+}
+
+/*Carrusel*/
+.containercarrusel{
+    position:relative; /* Establece la posición relativa para que los elementos hijos puedan posicionarse de manera absoluta dentro de este contenedor */
+    width: 1320px; /* Establece el ancho del contenedor */
+    height: 500px; /* Establece la altura del contenedor */
+    background-color: aqua; /* Establece el color de fondo del contenedor */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66); /* Agrega una sombra al contenedor */
+    border-radius: 15px; /* Establece el radio de borde para suavizar las esquinas */
+    overflow: hidden; /* Controla el desbordamiento del contenido que excede las dimensiones del contenedor */
+}
+.carruseles{
+    width: 300%; /* Establece el ancho del contenedor de carruseles como tres veces el ancho de su contenedor padre */
+    height: 100%;/* Establece la altura del contenedor de carruseles al 100% de la altura de su contenedor padre */
+    display: flex; /* Establece el estilo de visualización como flex para alinear los elementos internos */
+}
+.Slider_carrusel{
+    width: calc(100%/3); /* Establece el ancho de cada elemento de carrusel al 33.33% del ancho de su contenedor padre */
+    height: 100%; /* Establece la altura de cada elemento de carrusel al 100% de la altura de su contenedor padre */
+}
+.Slider_carrusel img{
+    width: 100%; /* Establece el ancho de la imagen al 100% del contenedor */
+    height: 100%; /* Establece la altura de la imagen al 100% del contenedor */
+    object-fit: cover; /* Ajusta la imagen para cubrir todo el contenedor manteniendo la proporción */
+    border-radius: 15px; /* Agrega un radio de borde a las esquinas de la imagen */
+}
+.btn-left, .btn-right {
+    display:flex; /* Establece el estilo de visualización como flex para alinear los elementos internos */
+    position: absolute;  /* Establece la posición absoluta para que los botones puedan posicionarse en cualquier parte del contenedor padre */
+    top:50%; /* Posiciona los botones en el centro verticalmente */
+    font-size: 1.5rem; /* Establece el tamaño del texto */
+    background-color: transparent; /* Establece el color de fondo transparente */
+    border-radius: 50%; /* Agrega un radio de borde circular */
+    padding: 5px; /* Agrega un relleno alrededor del contenido del botón */
+    font-weight: 600; /* Establece el peso de la fuente */
+    cursor: pointer; /* Cambia el cursor a una mano cuando se pasa sobre el botón */
+    color: #80050581; /* Establece el color del texto */
+    transform: translate(0,-90%); /* Mueve los botones hacia arriba en un 90% de su altura para centrarlos verticalmente */
+    transition: 0.5s ease; /* Agrega una transición suave de 0.5 segundos */
+    user-select: none; /* Evita que el usuario pueda seleccionar el texto del botón */
+}
+.btn-left:hover, .btn-right:hover{
+    background-color: #333333d4; /* Cambia el color de fondo al pasar el mouse sobre los botones */
+    color: #fff; /* Cambia el color del texto al pasar el mouse sobre los botones */
+}
+.btn-left{
+    left: 10px; /* Posiciona el botón a 10px desde la izquierda */
+}
+.btn-right{
+    right: 10px; /* Posiciona el botón a 10px desde la derecha */
+}
+
+/*Primeras Imagenes*/
+.contenedor_relevante {
+    text-align: center; /* Centra el texto horizontalmente dentro del contenedor */
+    justify-content: center; /* Centra los elementos secundarios horizontalmente */
+    align-items: center; /* Centra los elementos secundarios verticalmente */
+    padding: 30px; /* Agrega un relleno alrededor del contenido del contenedor */
+    position: relative; /* Establece la posición del contenedor */
+    margin-top: 20px; /* Margen superior del contenedor */
+    margin-left: 0px; /* Margen izquierdo del contenedor */
+    background-color: rgb(184, 171, 197); /* Establece el color de fondo del contenedor */
+    display: flex;  /* Establece el estilo de visualización como flex para alinear los elementos internos */
+}
+.titulo_imagen {
+    position: relative;   /* Establece la posición relativa para permitir el posicionamiento absoluto de elementos hijos */
+    display: inline-block;   /* Establece el estilo de visualización como inline-block para permitir el posicionamiento horizontal */
+    margin-left: -200px;   /* Mueve el elemento hacia la izquierda en 200px */
+    margin-top: 100px;   /* Mueve el elemento hacia arriba en 100px */
+    background-attachment: fixed;   /* Establece la fijación de fondo al desplazarse */
+    width: 1200px;   /* Establece el ancho del elemento */
+    height: 1100px;   /* Establece la altura del elemento */
+}
+.titulo_imagen img {
+    display: block;   /* Establece la visualización de la imagen como bloque para que respete el margen y el relleno */
+    max-width: 100%;   /* Establece el ancho máximo de la imagen al 100% del contenedor */
+    height: auto;   /* Mantiene la proporción de la imagen ajustando automáticamente la altura */
+    transition: filter 0.3s ease;   /* Transición para el efecto de oscurecimiento */
+}
+.titulo-golden {
+    position: absolute;   /* Establece la posición absoluta para el título */
+    top: -0%;   /* Ubica el título en la parte superior del elemento padre */
+    left: -0%;   /* Ubica el título en la parte izquierda del elemento padre */
+    transform: translate(450%, 280%);   /* Aplica una transformación de desplazamiento */
+    background-color: rgba(0, 0, 0, 0.7);   /* Establece el color de fondo del título con transparencia */
+    color: white;   /* Establece el color del texto del título */
+    padding: 10px;   /* Agrega un relleno interno alrededor del contenido del título */
+    font-size: 18px;   /* Establece el tamaño de fuente del título */
+    opacity: 0;   /* Inicialmente oculta el título */
+    transition: opacity 0.2s ease;   /* Agrega una transición suave para la propiedad de opacidad */
+    pointer-events: none;   /* Evita que el título responda a eventos del puntero */
+}
+.titulo_imagen:hover .titulo-golden {
+    opacity: 1; /* Mostrar al pasar el mouse sobre la imagen */
+}
+.titulo_imagen:hover img {
+    filter: brightness(70%); /* Oscurecer la imagen al pasar el mouse sobre ella */
+    cursor: pointer; /* Cambiar el cursor a una mano */
+}
+.titulo_fotitos {
+    margin-top: -1100px;   /* Desplaza el título hacia arriba */
+    margin-left: 100px;   /* Desplaza el título hacia la derecha */
+    color: rgb(83, 8, 168);   /* Establece el color del texto del título */
+    font: bold;   /* Establece el peso de la fuente del título */
+}
+.tipo-carta {
+    text-align: center;   /* Centra el texto dentro del contenedor */
+    width: 250px;   /* Establece el ancho del elemento */
+    margin: 0 auto;   /* Centra horizontalmente el elemento */
+}
+/*Segundas Imagenes*/
+.contenedor_relevante_dos {
+    text-align: center;   /* Centra el texto horizontalmente dentro del contenedor */
+    justify-content: center;   /* Centra los elementos secundarios horizontalmente */
+    align-items: center;   /* Centra los elementos secundarios verticalmente */
+    padding: 30px;   /* Agrega un relleno alrededor del contenido del contenedor */
+    position: relative;   /* Establece la posición relativa para permitir el posicionamiento absoluto de elementos hijos */
+    margin-left: -10px;   /* Desplaza el contenedor hacia la izquierda */
+    margin-top: -2000px;   /* Desplaza el contenedor hacia arriba */
+    margin-right: -10px;   /* Desplaza el contenedor hacia la derecha */
+    display: inline-flex;   /* Establece el estilo de visualización como inline-flex para alinear los elementos en línea */
+}
+.titulo_panoramas {
+    top: -0%;   /* Establece la posición superior del elemento en relación con su contenedor */
+    left: -0%;   /* Establece la posición izquierda del elemento en relación con su contenedor */
+    transform: translate(-440%, -150%);   /* Aplica una transformación de desplazamiento */
+    margin-right: -640px;   /* Desplaza el elemento hacia la derecha */
+    margin-left: 500px;   /* Desplaza el elemento hacia la izquierda */
+    margin-top: 300px;   /* Desplaza el elemento hacia arriba */
+    color: rgb(83, 8, 168);   /* Establece el color del texto */
+    width: 90px;   /* Establece el ancho del elemento */
+    height: 500px;   /* Establece la altura del elemento */
+}
+.titulo_pano_imagenes {
+    position: relative;   /* Establece la posición relativa para permitir el posicionamiento absoluto de elementos hijos */
+    display: inline-block;   /* Establece el estilo de visualización como inline-block para permitir el posicionamiento horizontal */
+    margin-top: -1300px;   /* Desplaza el elemento hacia arriba */
+    margin-right: -180px;   /* Desplaza el elemento hacia la derecha */
+    margin-left: 120px;   /* Desplaza el elemento hacia la izquierda */
+    font: bold;   /* Establece el peso de la fuente */
+}
+.titulo-golden_dos {
+    position: absolute;   /* Establece la posición absoluta para el título */
+    top: 5%;   /* Ubica el título en un 5% desde la parte superior del elemento padre */
+    left: -15%;   /* Ubica el título en un 15% desde la parte izquierda del elemento padre */
+    transform: translate(400%, 250%);   /* Aplica una transformación de desplazamiento */
+    background-color: rgba(196, 55, 55, 0.7);   /* Establece el color de fondo del título con transparencia */
+    color: white;   /* Establece el color del texto del título */
+    padding: 10px;   /* Agrega un relleno interno alrededor del contenido del título */
+    font-size: 18px;   /* Establece el tamaño de fuente del título */
+    opacity: 0;   /* Inicialmente oculta el título */
+    transition: opacity 0.2s ease;   /* Agrega una transición suave para la propiedad de opacidad */
+    pointer-events: none;   /* Evita que el título responda a eventos del puntero */
+}
+
+.titulo_pano_imagenes:hover .titulo-golden_dos {
+    opacity: 1; /* Mostrar al pasar el mouse sobre la imagen */
+}
+.titulo_pano_imagenes img {
+    display: block;   /* Establece la visualización de la imagen como bloque para que respete el margen y el relleno */
+    max-width: 100%;   /* Establece el ancho máximo de la imagen al 100% del contenedor */
+    height: auto;   /* Mantiene la proporción de la imagen ajustando automáticamente la altura */
+    transition: filter 0.3s ease;   /* Transición para el efecto de oscurecimiento */
+}
+.titulo_pano_imagenes img {
+    filter: brightness(50%); /* Oscurecer la imagen al pasar el mouse sobre ella */
+    cursor: pointer; /* Cambiar el cursor a una mano */
+  }
+  .panos {
+    text-align: center;   /* Centra el texto dentro del contenedor */
+    width: 250px;   /* Establece el ancho del elemento */
+    margin: 0 auto;   /* Centra horizontalmente el elemento */
+}
+
+/*Terceras Imagenes*/
+.contenedor_relevante_tres {
+    top: -1100%;   /* Establece la posición superior del elemento en relación con su contenedor */
+    left: -141%;   /* Establece la posición izquierda del elemento en relación con su contenedor */
+    transform: translate(220.7%, -1160%);   /* Aplica una transformación de desplazamiento */
+    text-align: center;   /* Centra el texto horizontalmente dentro del contenedor */
+    justify-content: center;   /* Centra los elementos secundarios horizontalmente */
+    align-items: center;   /* Centra los elementos secundarios verticalmente */
+    padding: 30px;   /* Agrega un relleno alrededor del contenido del contenedor */
+    position: relative;   /* Establece la posición relativa para permitir el posicionamiento absoluto de elementos hijos */
+    margin-left: -100px;   /* Desplaza el contenedor hacia la izquierda */
+    margin-top: 0px;   /* Establece el margen superior del contenedor */
+    margin-right: -10px;   /* Desplaza el contenedor hacia la derecha */
+    display: inline-flex;   /* Establece el estilo de visualización como inline-flex para alinear los elementos en línea */
+}
+.imagenes_inferiores {
+    position: relative;   /* Establece la posición relativa para permitir el posicionamiento absoluto de elementos hijos */
+    display: inline-block;   /* Establece el estilo de visualización como inline-block para permitir el posicionamiento horizontal */
+    margin-top: -1300px;   /* Desplaza el elemento hacia arriba */
+    margin-right: -180px;   /* Desplaza el elemento hacia la derecha */
+    margin-left: 120px;   /* Desplaza el elemento hacia la izquierda */
+    font: bold;   /* Establece el peso de la fuente */
+}
+.titulo-golden_tres {
+    position: absolute;   /* Establece la posición absoluta para el título */
+    top: 5%;   /* Ubica el título en un 5% desde la parte superior del elemento padre */
+    left: -15%;   /* Ubica el título en un 15% desde la parte izquierda del elemento padre */
+    transform: translate(400%, 250%);   /* Aplica una transformación de desplazamiento */
+    background-color: rgba(196, 55, 55, 0.7);   /* Establece el color de fondo del título con transparencia */
+    color: white;   /* Establece el color del texto del título */
+    padding: 10px;   /* Agrega un relleno interno alrededor del contenido del título */
+    font-size: 18px;   /* Establece el tamaño de fuente del título */
+    opacity: 0;   /* Inicialmente oculta el título */
+    transition: opacity 0.2s ease;   /* Agrega una transición suave para la propiedad de opacidad */
+    pointer-events: none;   /* Evita que el título responda a eventos del puntero */
+}
+.imagenes_inferiores:hover .titulo-golden_tres {
+    opacity: 1; /* Mostrar al pasar el mouse sobre la imagen */
+}
+.imagenes_inferiores img {
+    display: block;   /* Establece la visualización de la imagen como bloque para que respete el margen y el relleno */
+    max-width: 100%;   /* Establece el ancho máximo de la imagen al 100% del contenedor */
+    height: auto;   /* Mantiene la proporción de la imagen ajustando automáticamente la altura */
+    transition: filter 0.3s ease;   /* Transición para el efecto de oscurecimiento */
+}
+.imagenes_inferiores img {
+    filter: brightness(50%); /* Oscurecer la imagen al pasar el mouse sobre ella */
+    cursor: pointer; /* Cambiar el cursor a una mano */
+  }
+  .inferiores {
+    text-align: center;   /* Centra el texto dentro del contenedor */
+    width: 250px;   /* Establece el ancho del elemento */
+    margin: 0 auto;   /* Centra horizontalmente el elemento */
+}
+/*Ubicacion*/
+.ubicacion {
+    position: relative;   /* Establece la posición relativa para permitir el posicionamiento absoluto de elementos hijos */
+    background-color: rgb(184, 171, 197);   /* Establece el color de fondo */
+    margin-top: -1100px;   /* Desplaza el elemento hacia arriba */
+    margin-left: 0px;   /* Establece el margen izquierdo */
+}
+
+.ubicacion_letrita {
+    color: rgb(83, 8, 168);   /* Establece el color del texto */
+    position: absolute;   /* Establece la posición absoluta */
+    margin-top: -400px;   /* Desplaza el elemento hacia arriba */
+    margin-left: 120px;   /* Establece el margen izquierdo */
+}
+
+.patita {
+    background-color: #0d0b57;   /* Establece el color de fondo */
+    color: white;   /* Establece el color del texto */
+    width: 100%;   /* Establece el ancho al 100% del contenedor padre */
+    display: flex;   /* Establece el estilo de visualización como flex */
+}
+
+.imagen_micro {
+    bottom: 0px;   /* Establece la distancia del borde inferior del contenedor */
+    margin-bottom: 500px;   /* Establece el margen inferior del elemento */
+    margin-top: 80px;   /* Establece el margen superior del elemento */
+    max-width: 90%; /* Ajusta el ancho máximo al tamaño del contenedor */
+    height: 80px; /* Mantiene la proporción de aspecto */
+    margin-right: 10px; /* Espacio entre imágenes */
+    margin-left: -15px;   /* Establece el margen izquierdo del elemento */
+}
+.locomosion_a_secas {
+    top: -500%;   /* Establece la posición superior del elemento en relación con su contenedor */
+    left: -50%;   /* Establece la posición izquierda del elemento en relación con su contenedor */
+    transform: translate(450%, 0%);   /* Aplica una transformación de desplazamiento */
+}
+.direccion {
+    color: ivory;   /* Establece el color del texto */
+    top: 100%;   /* Establece la posición superior del elemento en relación con su contenedor */
+    left: 0%;   /* Establece la posición izquierda del elemento en relación con su contenedor */
+    transform: translate(15%, -1600%);   /* Aplica una transformación de desplazamiento */
+}
+.direccion_jackosn {
+    margin-top: 50px;   /* Establece el margen superior del elemento */
+    max-width: 100%; /* Ajusta el ancho máximo al tamaño del contenedor */
+    height: 230px; /* Mantiene la proporción de aspecto */
+    width: 370px;   /* Establece el ancho del elemento */
+    margin-right: -610px; /* Establece el margen derecho del elemento */
+    margin-left: 90px;   /* Establece el margen izquierdo del elemento */
+    top: 100%;   /* Establece la posición superior del elemento en relación con su contenedor */
+    left: 0%;   /* Establece la posición izquierda del elemento en relación con su contenedor */
+    transform: translate(-5%, -205%);   /* Aplica una transformación de desplazamiento */
+}
+.texto-p {
+    color: azure;   /* Establece el color del texto */
+    font-weight: bold;   /* Establece el peso de la fuente */
+    top: 100%;   /* Establece la posición superior del elemento en relación con su contenedor */
+    left: 0%;   /* Establece la posición izquierda del elemento en relación con su contenedor */
+    transform: translate(5.3%, -4100%);   /* Aplica una transformación de desplazamiento */
+}
+.horario {
+    color: ivory;   /* Establece el color del texto */
+    top: 100%;   /* Establece la posición superior del elemento en relación con su contenedor */
+    left: 0%;   /* Establece la posición izquierda del elemento en relación con su contenedor */
+    transform: translate(43%, -3100%);   /* Aplica una transformación de desplazamiento */
+}
+.horario_puntos {
+    color: ivory;   /* Establece el color del texto */
+    top: 100%;   /* Establece la posición superior del elemento en relación con su contenedor */
+    left: 0%;   /* Establece la posición izquierda del elemento en relación con su contenedor */
+    transform: translate(35%, -415%);   /* Aplica una transformación de desplazamiento */
+}
+.Destacado {
+    color: azure;   /* Establece el color del texto */
+    font-weight: bold;   /* Establece el peso de la fuente */
+    font-size: 1.3em;   /* Establece el tamaño de la fuente */
+}
+.subrallado {
+    text-decoration: underline;   /* Agrega un subrayado al texto */
+}
+.contacto {
+    color: azure;   /* Establece el color del texto */
+    top: 0%;   /* Establece la posición superior del elemento en relación con su contenedor */
+    left: 0%;   /* Establece la posición izquierda del elemento en relación con su contenedor */
+    transform: translate(69%, -4050%);   /* Aplica una transformación de desplazamiento */
+}
+.telefonito {
+    color: azure;   /* Establece el color del texto */
+    top: 0%;   /* Establece la posición superior del elemento en relación con su contenedor */
+    left: 0%;   /* Establece la posición izquierda del elemento en relación con su contenedor */
+    transform: translate(65%, -5900%);   /* Aplica una transformación de desplazamiento */
+}
+
